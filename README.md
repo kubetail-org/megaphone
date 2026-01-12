@@ -2,7 +2,7 @@
 
 *Megaphone is a tiny, in-memory async broadcast library for Go*
 
-<img width="480" height="355" alt="megaphone-cropped2" src="https://github.com/user-attachments/assets/a292c530-c598-4560-b4bc-b5a599235211" />
+<img width="480" height="355" alt="534581366-a292c530-c598-4560-b4bc-b5a599235211" src="https://github.com/user-attachments/assets/7819f447-51a8-4045-95c4-0dfc15396be4" />
 
 ## Introduction
 
