@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Megaphone is a tiny, in-memory async broadcast library for Go that uses generics to enable simple, type-safe broadcast workflows. Using megaphone you can publish to many subscribers simultaneously in a thread-safe way that fits neatly into common workflows. Although similar patterns have been implemented in existing libraries, we couldn't find a simple one with support for graceful shutdowns, so we created this library to use ourselves (for [https://github.com/kubetail-org/kubetail](Kubetail)). We hope you find it useful too.
+Megaphone is a tiny, in-memory async broadcast library for Go that uses generics to enable simple, type-safe broadcast workflows. Using megaphone you can publish to many subscribers simultaneously in a thread-safe way that fits neatly into common workflows. Although similar patterns have been implemented in existing libraries, we couldn't find a simple one with support for graceful shutdowns, so we created this library to use ourselves (for [Kubetail](https://github.com/kubetail-org/kubetail)). We hope you find it useful too.
 
 ## Installation
 
