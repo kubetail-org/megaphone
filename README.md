@@ -51,10 +51,10 @@ err = mp.DrainWithContext(ctx)
 
 ## Delivery Guarantees
 
-- **In-memory only**: Messages are not persisted. Publishing to a topic with no subscribers silently drops the message.
-- **At-most-once delivery**: Each subscriber receives a message at most once. Concurrent `Unsubscribe` or `Close` calls may cause in-flight messages to be dropped.
-- **No ordering guarantees**: Callbacks run in separate goroutines and may complete out of order.
-- **Graceful shutdown**: `Unsubscribe` and `Close` prevent new deliveries, but callbacks already in flight will run to completion. Use `Drain` or `DrainWithContext` to wait for in-flight callbacks before shutdown.
+- **In-memory only**: Messages are not persisted and publishing to a topic with no subscribers silently drops the message
+- **At-most-once delivery**: Each subscriber receives the message exactly once if it is already subscribed at the time of publish or never if it isn't
+- **No ordering guarantees**: Callbacks run in separate goroutines and may complete out of order
+- **Graceful shutdown**: Use Drain() or DrainWithContext() to wait for in-flight callbacks before shutdown
 
 ## API
 
