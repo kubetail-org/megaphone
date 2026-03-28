@@ -171,9 +171,10 @@ func (s *subscriber[T]) Unsubscribe() {
 	s.megaphone.removeSubscriber(s)
 }
 
-// Drain blocks until all pending messages for this subscriber
-// have been processed.
+// Drain unsubscribes and then blocks until all pending messages
+// for this subscriber have been processed.
 func (s *subscriber[T]) Drain() {
+	s.Unsubscribe()
 	s.wg.Wait()
 }
 
